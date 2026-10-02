@@ -1,6 +1,6 @@
 # Golden Crumb Bakery
 
-A handmade bakery website concept — fresh cakes, breads, pastries and cookies baked daily in Chennai.
+A handmade bakery website concept — fresh cakes, breads, pastries and cookies baked daily in Chennai or anywhere in the world.
 
 > This is a fictional concept project. All product descriptions, prices, testimonials and the address are placeholders.
 
