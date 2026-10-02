@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Crumb Bakery | Fresh Bakes in Chennai</title>
+  <meta name="description" content="Golden Crumb Bakery - handmade cakes, breads, pastries and cookies baked fresh every morning in Chennai. (Fictional concept project)">
+  <!-- Google Fonts: Playfair Display (headings) + Nunito (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== 1. NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Golden Crumb</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== 2. HERO ========== -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Baked fresh. Baked with love.</h1>
+        <p>Handmade cakes, breads and pastries from our Chennai oven to your table, every single morning.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+    </section>
+
+    <!-- ========== 3. ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <img src="images/about.jpg" alt="A baker shaping fresh dough in the Golden Crumb kitchen" class="about-img reveal">
+        <div class="reveal">
+          <h2>Our Story</h2>
+          <p>Golden Crumb started in a small home kitchen with one family recipe and a big love for the smell of warm bread. Today we bake in small batches, using fresh butter, local ingredients and no shortcuts.</p>
+          <p>Whether it is a birthday cake, a weekend sourdough or a simple tea-time cookie, every bake is made by hand.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. MENU ========== -->
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <h2 class="center reveal">Our Menu</h2>
+        <!-- Filter buttons: data-filter must match the data-category on cards -->
+        <div class="filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+          <button class="filter-btn" data-filter="breads">Breads</button>
+          <button class="filter-btn" data-filter="pastries">Pastries</button>
+          <button class="filter-btn" data-filter="cookies">Cookies</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- To add an item: copy one <article> block and change the text, image and data-category -->
+          <article class="card" data-category="cakes">
+            <img src="images/chocolate-cake.jpg" alt="Chocolate truffle cake with glossy ganache">
+            <div class="card-body"><h3>Chocolate Truffle Cake</h3><p>Rich dark chocolate sponge with silky ganache.</p><span class="price">Rs. 750</span></div>
+          </article>
+          <article class="card" data-category="cakes">
+            <img src="images/mango-cake.jpg" alt="Mango cream cake topped with fresh mango slices">
+            <div class="card-body"><h3>Mango Cream Cake</h3><p>Light vanilla sponge with fresh mango and cream.</p><span class="price">Rs. 700</span></div>
+          </article>
+          <article class="card" data-category="breads">
+            <img src="images/sourdough.jpg" alt="Crusty sourdough loaf on a wooden board">
+            <div class="card-body"><h3>Sourdough Loaf</h3><p>Slow-fermented, crisp crust, soft tangy inside.</p><span class="price">Rs. 220</span></div>
+          </article>
+          <article class="card" data-category="breads">
+            <img src="images/multigrain-bread.jpg" alt="Sliced multigrain bread with seeds">
+            <div class="card-body"><h3>Multigrain Bread</h3><p>Wholesome bread packed with oats and seeds.</p><span class="price">Rs. 160</span></div>
+          </article>
+          <article class="card" data-category="breads">
+            <img src="images/garlic-buns.jpg" alt="Golden garlic butter buns in a tray">
+            <div class="card-body"><h3>Garlic Butter Buns</h3><p>Soft buns brushed with garlic and herb butter.</p><span class="price">Rs. 120</span></div>
+          </article>
+          <article class="card" data-category="pastries">
+            <img src="images/croissant.jpg" alt="Flaky butter croissant on a plate">
+            <div class="card-body"><h3>Butter Croissant</h3><p>Layers of flaky, buttery pastry baked golden.</p><span class="price">Rs. 90</span></div>
+          </article>
+          <article class="card" data-category="pastries">
+            <img src="images/almond-danish.jpg" alt="Almond danish pastry dusted with sugar">
+            <div class="card-body"><h3>Almond Danish</h3><p>Crisp pastry filled with almond cream.</p><span class="price">Rs. 130</span></div>
+          </article>
+          <article class="card" data-category="pastries">
+            <img src="images/cinnamon-roll.jpg" alt="Cinnamon roll with white icing">
+            <div class="card-body"><h3>Cinnamon Roll</h3><p>Warm, gooey roll with cinnamon and vanilla icing.</p><span class="price">Rs. 110</span></div>
+          </article>
+          <article class="card" data-category="cookies">
+            <img src="images/chocolate chip cookies.jpg" alt="Chocolate chip cookies stacked on a plate">
+            <div class="card-body"><h3>Choco Chip Cookies</h3><p>Crunchy edges, chewy centre. Box of 6.</p><span class="price">Rs. 180</span></div>
+          </article>
+          <article class="card" data-category="cookies">
+            <img src="images/oat cookies.jpg" alt="Oat cookies with jaggery on a cooling rack">
+            <div class="card-body"><h3>Jaggery Oat Cookies</h3><p>Naturally sweet with jaggery and rolled oats. Box of 6.</p><span class="price">Rs. 160</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. WHY CHOOSE US ========== -->
+    <section class="section" id="why">
+      <div class="container">
+        <h2 class="center reveal">Why Choose Us</h2>
+        <div class="features">
+          <div class="feature reveal"><span class="icon" aria-hidden="true">&#127838;</span><h3>Baked Fresh Daily</h3><p>Nothing sits on our shelves overnight.</p></div>
+          <div class="feature reveal"><span class="icon" aria-hidden="true">&#127806;</span><h3>Quality Ingredients</h3><p>Real butter, fresh cream, no preservatives.</p></div>
+          <div class="feature reveal"><span class="icon" aria-hidden="true">&#127874;</span><h3>Custom Orders</h3><p>Birthday and wedding cakes made your way.</p></div>
+          <div class="feature reveal"><span class="icon" aria-hidden="true">&#128757;</span><h3>Local Delivery</h3><p>Quick delivery across Chennai.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. GALLERY ========== -->
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <h2 class="center reveal">Gallery</h2>
+        <div class="gallery-grid">
+          <!-- Each button opens the lightbox with its image -->
+          <button class="gallery-item reveal"><img src="images/gallery-1.jpg" alt="Fresh loaves cooling on a rack"></button>
+          <button class="gallery-item reveal"><img src="images/gallery-2.jpg" alt="Decorated birthday cake with candles"></button>
+          <button class="gallery-item reveal"><img src="images/gallery-3.jpg" alt="Tray of assorted pastries"></button>
+          <button class="gallery-item reveal"><img src="images/gallery-4.jpg" alt="Baker dusting flour onto dough"></button>
+          <button class="gallery-item reveal"><img src="images/gallery-5.jpg" alt="Cupcakes with pink frosting"></button>
+          <button class="gallery-item reveal"><img src="images/gallery-6.jpg" alt="Cosy bakery counter with bread display"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. TESTIMONIALS ========== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="center reveal">Happy Customers</h2>
+        <div class="reviews">
+          <blockquote class="review reveal"><p>"The sourdough is the best I have had in Chennai. We order every weekend!"</p><footer>- Priya S., Adyar</footer></blockquote>
+          <blockquote class="review reveal"><p>"Our son's birthday cake was beautiful and tasted even better."</p><footer>- Karthik R., Pallavaram</footer></blockquote>
+          <blockquote class="review reveal"><p>"Those croissants are flaky perfection. Worth waking up early for."</p><footer>- Meera N., T. Nagar</footer></blockquote>
+        </div>
+        <p class="center note">Reviews are fictional, for this concept project.</p>
+      </div>
+    </section>
+
+    <!-- ========== 8. CONTACT ========== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2>Order Enquiry</h2>
+          <!-- Replace YOUR_EMAIL@example.com with your actual email address -->
+          <form id="enquiryForm" action="https://formsubmit.co/afreenn.sky@gmail.com" method="POST" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+              <span class="error" id="nameError" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone (10 digits)</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+              <span class="error" id="phoneError" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="error" id="emailError" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="message">Your order or question</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <span class="error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn">Send Enquiry</button>
+            <p class="success" id="formSuccess" role="status" hidden>Thank you! We have received your enquiry and will call you soon.</p>
+          </form>
+        </div>
+        <div class="reveal">
+          <h2>Visit Us</h2>
+          <ul class="hours">
+            <li><span>Mon - Fri</span><span>7:00 AM - 9:00 PM</span></li>
+            <li><span>Saturday</span><span>7:00 AM - 10:00 PM</span></li>
+            <li><span>Sunday</span><span>8:00 AM - 8:00 PM</span></li>
+          </ul>
+          <address>12, Bakers Street, Chennai, Tamil Nadu (fictional address)</address>
+          <!-- Replace this box with a Google Maps iframe embed later -->
+          <div class="map-placeholder">Map placeholder</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 9. FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Golden Crumb Bakery</p>
+      <p>
+        <a href="#" aria-label="Golden Crumb on Instagram">Instagram</a> &middot;
+        <a href="#" aria-label="Golden Crumb on Facebook">Facebook</a> &middot;
+        <a href="#" aria-label="Golden Crumb on WhatsApp">WhatsApp</a>
+      </p>
+      <p>&copy; <span id="year">2026</span> Golden Crumb Bakery. A fictional concept project.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox (hidden until a gallery image is clicked) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- Back to top button -->
+  <button class="to-top" id="toTop" aria-label="Back to top" hidden>&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
